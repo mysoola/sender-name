@@ -1,0 +1,12 @@
+2020-04-21 20:26:00 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-04-21 20:26:00 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-04-21 20:26:00 -  - exec CUpdateClientPartner::ParseServerData
+2020-04-21 20:26:00 -  - exec CUpdateClientPartner::GetUpdatesList
+2020-04-21 20:26:00 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-04-21 20:26:00 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=bitrix&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=7.4.5&NGINX=Y&dbv=8.0.19&instm=main%2C20.0.650%2CY%3Brest%2C20.0.150%2CN%3Biblock%2C20.0.350%2CN%3Bui%2C20.0.200%2CN%3Bbitrixcloud%2C20.0.0%2CN%3Bb24connector%2C18.5.0%2CN%3Bfileman%2C18.5.700%2CN%3Bperfmon%2C20.0.0%2CN%3Blanding%2C20.2.0%2CN%3Btranslate%2C19.0.100%2CN%3Bclouds%2C20.0.0%2CN%3Bhighloadblock%2C20.0.100%2CN%3Bsearch%2C18.5.200%2CN%3Bsocialservices%2C19.0.200%2CN%3Bcompression%2C19.0.0%2CN%3Bseo%2C20.0.0%2CN%3Bmessageservice%2C20.0.0%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN&reqm=bitrix.sitecorporate&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2020-04-21 20:26:00 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-04-21 20:26:01 -  - TIME GetUpdatesList(request) 0.264 sec
+2020-04-21 20:26:01 -  - exec CUpdateClientPartner::ParseServerData
+2020-04-21 20:26:01 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-04-21 20:26:01 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-04-21 20:26:01 -  - exec CUpdateClientPartner::ParseServerData

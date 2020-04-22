@@ -1,0 +1,14 @@
+{
+    "require": {
+        "symfony/validator": "^5.0"
+    },
+    "autoload": {
+        "files": [
+            "public/local/php_interface/functions.php",
+            "public/local/php_interface/constants.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
