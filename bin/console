@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source .env
+
+test -t 1 && USE_TTY="--tty"
+
+docker exec -i -u www-data php console/run.php "$@"

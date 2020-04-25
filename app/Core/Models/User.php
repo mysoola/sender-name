@@ -30,4 +30,33 @@ class User
 
         return $arUser;
     }
+
+    public function getAllUsers(): array
+    {
+        $usersObj = UserTable::getList([
+            'select' => [
+                'ID',
+                'NAME',
+                'SECOND_NAME',
+                'LAST_NAME',
+                'PERSONAL_PHONE',
+                'EMAIL',
+                'ACTIVE',
+                'DATE_REGISTER',
+            ],
+            'order' => [
+                'NAME' => 'ASC',
+            ],
+        ]);
+
+        $arUsers = [];
+        while ($user = $usersObj->fetch()) {
+            $user['DATE_REGISTER'] = $user['DATE_REGISTER']->toString();
+            $user['ACTIVE'] = ($user['ACTIVE'] == 'Y');
+
+            $arUsers[$user['ID']] = $user;
+        }
+
+        return $arUsers;
+    }
 }
