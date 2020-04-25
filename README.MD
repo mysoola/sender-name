@@ -1,3 +1,11 @@
+##Cписок зарегистрированных пользователей
+Компонент списка - public/local/components/public/users.list
+Вызов компонента списка пользователей - index.php
+Компонент пагинации - public/local/components/public/pagination
+События отчистки паки кеша пользователей - public/local/php_interface/events.php
+Обработчик События отчистки паки кеша - app/Core/Events/UserList.php
+
+##Список имён отпрвителя
 Комплексный компонент - public/local/components/public/application.for.letter.name
 
 Список имён отпрвителя (отображаются только для текущего и авторизованного пользователя)

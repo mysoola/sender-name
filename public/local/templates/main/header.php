@@ -9,12 +9,13 @@ $assets = Asset::getInstance();
  */
 
 $assets->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+$assets->addCss(SITE_TEMPLATE_PATH . PUBLIC_ASSETS_PATH . 'css/styles.css');
 
 /**
  * JS
  */
+$assets->addJs('http://code.jquery.com/jquery-latest.min.js');
 $assets->addJs('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js');
-
 ?>
 
 <html lang="ru">

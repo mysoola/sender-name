@@ -16,4 +16,12 @@ $arUrlRewrite = array(
             'PATH' => '/application-for-letter-name/index.php',
             'SORT' => 100,
         ),
+    2 =>
+        array (
+            'CONDITION' => '#^/public-ajax/#',
+            'RULE' => '',
+            'ID' => '',
+            'PATH' => '/ajax/route.php',
+            'SORT' => 100,
+        ),
 );
