@@ -28,6 +28,7 @@ class Component extends \CBitrixComponent
         $this->handleAjax($this->request);
 
         $page = 1;
+        // Для поисковиков
         $requestPage = (int)$this->request->get('users_page');
         if (isset($requestPage)) {
             $pageParamIsValid = $this->pageValidate($requestPage);
