@@ -1,7 +1,8 @@
 {
     "require": {
         "symfony/validator": "^5.0",
-        "symfony/console": "^4.3"
+        "symfony/console": "^4.3",
+        "phpoffice/phpspreadsheet": "^1.12"
     },
     "autoload": {
         "files": [
