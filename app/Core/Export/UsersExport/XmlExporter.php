@@ -4,7 +4,7 @@ namespace App\Core\Export\UsersExport;
 
 class XmlExporter implements UsersExportInterface
 {
-    const FILE_PATH = '/upload/export/users/users.xml';
+    const FILE_PATH = 'public/upload/export/users/users.xml';
 
     private function saveToXml(array $arUsers): bool
     {
@@ -19,7 +19,6 @@ class XmlExporter implements UsersExportInterface
         $export->writeBeginTag('items');
         foreach ($arUsers as $user) {
             $export->writeItem($user, 'item');
-            $export->writeItem(['item' => $user]);
         }
 
         if (!empty($export->getErrors())) {
@@ -31,8 +30,11 @@ class XmlExporter implements UsersExportInterface
         return file_exists(self::FILE_PATH);
     }
 
-    public function exportUsers($arUsers): void
+    public function exportUsers(array $arUsers): bool
     {
-        $this->saveToXml($arUsers);
+        try {
+            return $this->saveToXml($arUsers);
+        } catch (\Exception $e) {
+        }
     }
 }

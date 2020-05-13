@@ -6,7 +6,7 @@ use Bitrix\Main\DB\Exception;
 
 class UsersExportFactory
 {
-    public function exportUsers($type)
+    public function exportUsers(string $type)
     {
         switch ($type) {
             case 'xml': return new XmlExporter();

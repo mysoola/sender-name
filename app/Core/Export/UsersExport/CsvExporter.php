@@ -8,8 +8,17 @@ class CsvExporter implements UsersExportInterface
     const DELIMITER = ';';
     const FILE_PATH = 'public/upload/export/users/users.csv';
 
-    private function saveToXml(array $arUsers): bool
+    private function saveToCsv(array $arUsers): bool
     {
+        $arUsers = array_map(function ($user) {
+            foreach ($user as &$value) {
+                if (empty($value)) {
+                    $value = 'empty';
+                }
+            }
+
+            return $user;
+        }, $arUsers);
 
         $buffer = fopen(self::FILE_PATH, 'w');
         fputs($buffer, chr(0xEF) . chr(0xBB) . chr(0xBF));
@@ -18,8 +27,8 @@ class CsvExporter implements UsersExportInterface
         $arHeader = array_keys($firstElement);
         fputcsv($buffer, $arHeader, self::DELIMITER);
 
-        foreach ($arUsers as $val) {
-            fputcsv($buffer, $val, self::DELIMITER);
+        foreach ($arUsers as $user) {
+            fputcsv($buffer, $user, self::DELIMITER);
         }
 
         fclose($buffer);
@@ -27,8 +36,8 @@ class CsvExporter implements UsersExportInterface
         return file_exists(self::FILE_PATH);
     }
 
-    public function exportUsers($arUsers): void
+    public function exportUsers(array $arUsers): bool
     {
-        $this->saveToXml($arUsers);
+        return $this->saveToCsv($arUsers);
     }
 }

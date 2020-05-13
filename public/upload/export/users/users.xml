@@ -11,26 +11,6 @@
 		<date_register>25.04.2020 09:36:25</date_register>
 	</item>
 	<item>
-		<id>2</id>
-		<name>Василий</name>
-		<second_name />
-		<last_name>Телегин</last_name>
-		<personal_phone />
-		<email>vasya@yandex.ru</email>
-		<active>1</active>
-		<date_register>25.04.2020 09:36:25</date_register>
-	</item>
-	<item>
-		<id>4</id>
-		<name>Иван</name>
-		<second_name />
-		<last_name>Телегин</last_name>
-		<personal_phone />
-		<email>vanya@yandex.ru</email>
-		<active>1</active>
-		<date_register>25.04.2020 09:37:45</date_register>
-	</item>
-	<item>
 		<id>4</id>
 		<name>Иван</name>
 		<second_name />
@@ -49,26 +29,6 @@
 		<email>admin@yandex.ru</email>
 		<active>1</active>
 		<date_register>21.04.2020 20:25:39</date_register>
-	</item>
-	<item>
-		<id>1</id>
-		<name>Михаил</name>
-		<second_name />
-		<last_name>Телегин</last_name>
-		<personal_phone />
-		<email>admin@yandex.ru</email>
-		<active>1</active>
-		<date_register>21.04.2020 20:25:39</date_register>
-	</item>
-	<item>
-		<id>3</id>
-		<name>Пётр</name>
-		<second_name />
-		<last_name>Телегин</last_name>
-		<personal_phone />
-		<email>petya@yandex.ru</email>
-		<active>1</active>
-		<date_register>25.04.2020 09:36:59</date_register>
 	</item>
 	<item>
 		<id>3</id>
